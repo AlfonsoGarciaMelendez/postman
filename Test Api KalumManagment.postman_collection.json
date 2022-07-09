@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "86f56893-47ce-4a7d-83ef-be1bc188a463",
+		"name": "Test Api KalumManagment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12185422"
+	},
+	"item": [
+		{
+			"name": "CarrerasTecnicas",
+			"item": [
+				{
+					"name": "01-Consultar todas las carreras tecnicas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5208/v1/KalumManagement/CarrerasTecnicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5208",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02-Consultar una carrera tecnica",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5208/v1/KalumManagement/CarrerasTecnicas/E8187B94-6F3A-4776-8152-67C3E90B05E0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5208",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"E8187B94-6F3A-4776-8152-67C3E90B05E0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03-Agregar una carrera tecnica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5208/v1/KalumManagement/CarrerasTecnicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5208",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04-Eliminar una carrera tecnica Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5208/v1/KalumManagement/CarrerasTecnicas/A0B95887-DC37-4BDA-AA79-394E60062E40",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5208",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"A0B95887-DC37-4BDA-AA79-394E60062E40"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05-Modificar carrera tecnica",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CarreraId\": \"E8187B94-6F3A-4776-8152-67C3E90B05E0\",\r\n    \"Nombre\": \"Desarrollo de aplicaciones Moviles ION\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5208/v1/KalumManagement/CarrerasTecnicas/E8187B94-6F3A-4776-8152-67C3E90B05E0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5208",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"E8187B94-6F3A-4776-8152-67C3E90B05E0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aspirante",
+			"item": [
+				{
+					"name": "01-Agregar aspirante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NoExpediente\": \"EXP202200002\",\r\n    \"Apellidos\": \"TEST\",\r\n    \"Nombres\": \"TEST\",\r\n    \"Direccion\": \"TEST\",\r\n    \"Telefono\": \"545444\",\r\n    \"Email\": \"TEST\",\r\n    \"CarreraId\": \"45444\",\r\n    \"JornadaId\": \"3434\",\r\n    \"ExamenId\": \"4343\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5208/v1/KalumManagement/Aspirantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5208",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Aspirantes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
